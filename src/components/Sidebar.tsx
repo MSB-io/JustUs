@@ -21,9 +21,9 @@ const Sidebar: React.FC<SidebarProps> = ({
         isCollapsed ? "w-20" : "w-60"
       )}
     >
-      <div className="flex flex-col flex-grow justify-center py-4 px-2">
+      <div className="flex flex-col flex-grow justify-center py-4 px-4">
         {/* Main Navigation */}
-        <nav className="flex flex-col gap-1">
+        <nav className="flex flex-col gap-3">
           {sidebarLinks
             .filter((link) => link.name !== "Upgrade")
             .map((link) => {
@@ -54,7 +54,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div className="my-4 border-t border-border"></div>
 
         {/* Playlists Section */}
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-3">
           <button
             className={cn(
               "flex items-center p-3 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors duration-200",
