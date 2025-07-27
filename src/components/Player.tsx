@@ -4,8 +4,6 @@ import {
   Pause,
   SkipBack,
   SkipForward,
-  Shuffle,
-  Repeat,
   Mic2,
   ListMusic,
   Laptop2,
@@ -20,8 +18,7 @@ import { currentSong } from '../constants/data';
 
 const Player = () => {
   const [isPlaying, setIsPlaying] = React.useState(true);
-  const [progress, setProgress] = React.useState(40);
-  const [volume, setVolume] = React.useState(75);
+  const [volume] = React.useState(75);
 
   return (
     <footer className="bg-black border border-border px-4 py-4 flex items-center rounded-xl">

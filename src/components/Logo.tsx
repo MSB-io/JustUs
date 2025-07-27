@@ -1,4 +1,3 @@
-import { Music4 } from 'lucide-react';
 import React from 'react';
 
 export const Logo: React.FC = () => {
